@@ -52,23 +52,6 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Solar Energy Theme
-				solar: {
-					yellow: 'hsl(var(--solar-yellow))',
-					orange: 'hsl(var(--solar-orange))'
-				},
-				energy: {
-					green: 'hsl(var(--energy-green))',
-					blue: 'hsl(var(--energy-blue))'
-				},
-				sky: {
-					blue: 'hsl(var(--sky-blue))'
-				},
-				status: {
-					active: 'hsl(var(--status-active))',
-					warning: 'hsl(var(--status-warning))',
-					error: 'hsl(var(--status-error))'
-				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -105,34 +88,7 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.3s ease-out',
-				'scale-in': 'scale-in 0.2s ease-out',
-				'glow': 'glow 2s ease-in-out infinite alternate'
-			},
-			backgroundImage: {
-				'gradient-solar': 'var(--gradient-solar)',
-				'gradient-energy': 'var(--gradient-energy)',
-				'gradient-sky': 'var(--gradient-sky)'
-			},
-			boxShadow: {
-				'solar': 'var(--shadow-solar)',
-				'energy': 'var(--shadow-energy)',
-				'card': 'var(--shadow-card)'
-			},
-			keyframes: {
-				'fade-in': {
-					'0%': { opacity: '0', transform: 'translateY(10px)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' }
-				},
-				'scale-in': {
-					'0%': { transform: 'scale(0.95)', opacity: '0' },
-					'100%': { transform: 'scale(1)', opacity: '1' }
-				},
-				'glow': {
-					'0%': { boxShadow: '0 0 20px hsl(var(--solar-yellow) / 0.3)' },
-					'100%': { boxShadow: '0 0 30px hsl(var(--solar-yellow) / 0.5)' }
-				}
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
