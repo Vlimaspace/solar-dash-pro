@@ -27,25 +27,23 @@ export function AppSidebar() {
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
 
-  const getNavClasses = ({ isActive }: { isActive: boolean }) =>
-    isActive 
-      ? "bg-primary text-primary-foreground font-medium shadow-energy" 
-      : "hover:bg-secondary/60 transition-colors";
-
+  const getNavClasses = () => 
+  "text-black font-medium"; 
+  
   return (
     <Sidebar
       className={`${collapsed ? "w-14" : "w-64"} border-r border-border bg-card transition-all duration-300`}
       collapsible="icon"
     >
       <SidebarContent className="p-4">
-        <div className="mb-6 flex items-center gap-3">
-          <div className="h-8 w-8 rounded-lg bg-gradient-solar flex items-center justify-center">
-            <div className="h-4 w-4 bg-white rounded-full"></div>
+        <div className="mb-6 flex flex-col items-center gap-2">
+          <div className="h-22 w-22 rounded-lg overflow-hidden flex items-center justify-left">
+            <img src="/GrupoHLima.jpeg" alt="Logo" className="h-full w-full object-cover" />
           </div>
           {!collapsed && (
             <div>
-              <h2 className="font-bold text-lg text-foreground">CRM Solar</h2>
-              <p className="text-xs text-muted-foreground">Energia Fotovoltaica</p>
+              <h2 className="font-bold text-lg text-foreground">CRM Solar Versão Teste</h2>
+              <p className="text-xs text-muted-foreground">Grupo HLima</p>
             </div>
           )}
         </div>

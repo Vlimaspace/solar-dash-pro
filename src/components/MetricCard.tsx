@@ -27,7 +27,7 @@ export function MetricCard({
   const variantClasses = {
     default: "bg-card border-border",
     solar: "bg-gradient-solar text-white border-0 shadow-solar",
-    energy: "bg-gradient-energy text-white border-0 shadow-energy",
+    energy: "bg-gradient-to-r from-blue-700 via-blue-800 to-blue-950 text-white border-0 shadow-lg",
     warning: "bg-status-warning/10 border-status-warning/30",
     error: "bg-status-error/10 border-status-error/30"
   };
