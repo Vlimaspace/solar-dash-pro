@@ -76,8 +76,7 @@ export function MetricCard({
             variant === "solar" || variant === "energy" ? "text-white/90" : "text-muted-foreground"
           )}>
             <span className={cn(
-              "font-medium",
-              trend.value > 0 ? "text-status-active" : "text-status-error"
+              
             )}>
               {trend.value > 0 ? "+" : ""}{trend.value}%
             </span>
